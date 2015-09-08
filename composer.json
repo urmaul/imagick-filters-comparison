@@ -1,0 +1,6 @@
+{
+    "require": {
+        "slim/slim": "~2.6",
+        "urmaul/httpclient": "~1.1"
+    }
+}
