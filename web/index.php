@@ -39,10 +39,10 @@ $app->get('/:url(/:width)', function ($url) use ($app, $width = 200) {
         for ($i = 0; $i<$n; $i++) {
             $im = $imagick->clone();
             if ($filter === 'scale') {
-                $im->scaleImage(width, 0);
+                $im->scaleImage($width, 0);
 
             } else {
-                $im->resizeImage(width, 0, $filter, 1);
+                $im->resizeImage($width, 0, $filter, 1);
             }
         }
         $t2 = microtime(true);
